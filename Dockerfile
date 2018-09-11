@@ -38,7 +38,7 @@ RUN apk add --update --no-cache \
 		mariadb=$MYSQL_VERSION \
 		mariadb-dev=$MYSQL_VERSION \
 		gd-dev \
-		jpeg-dev \
+		libjpeg-turbo-dev \
 		libpng-dev \
 		libwebp-dev \
 		libxpm-dev \
@@ -55,7 +55,7 @@ RUN apk add --update --no-cache \
 	docker-php-ext-enable apcu && \
 	pecl install apcu_bc-$APCU_BC_VERSION && \
 	docker-php-ext-enable apc && \
-	docker-php-ext-configure gd --with-jpeg-dir=/opt/mozjpeg && \
+	docker-php-ext-configure gd --with-png-dir=/usr --with-jpeg-dir=/usr && \
 	docker-php-ext-install \
 		mysqli \
 		opcache \
