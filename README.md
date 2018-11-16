@@ -1,3 +1,8 @@
+# Attention: EOL will be at 31 Dec 2018
+Repository move to :
+* [DockerHub (pressmaninc/pm-kusanagi-php72)](https://hub.docker.com/r/pressmaninc/pm-kusanagi-php72/)
+* [GitHub (presmaninc/pm-kusanagi-php72)](https://github.com/pressmaninc/pm-kusanagi-php72)
+
 # pm-kusanagi-php72
 PHP7.2 FastCGI Server ( for KUSANAGI Runs on Docker Ver. PRESSMAN )
 
